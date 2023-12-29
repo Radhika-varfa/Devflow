@@ -5,7 +5,7 @@ import Tag from "@/database/tag.model";
 import User from "@/database/user.model";
 import { CreateQuestionParams, GetQuestionsParams } from "./shared.types";
 
-export async function getQuestion(params:GetQuestionsParams){
+export async function getQuestion(params: GetQuestionsParams){
 try{
 connectToDatabase();
 
@@ -20,17 +20,18 @@ return{questions};
 }
 }
 
-export async function createQuestion(params: CreateQuestionParams){
-    try{
-connectToDatabase();
-//Create the question 
-const {title, content, tags, author, path}= params;
-
-const question =await Question.create({
-    title,
-    content,
-    author
-});
+export async function createQuestion(params: CreateQuestionParams) {
+    try {
+      connectToDatabase();
+  
+      const { title, content, tags, author, path } = params;
+  
+      // Create the question
+      const question = await Question.create({
+        title,
+        content,
+        author
+      });
 
 const tagDocuments = [];
  // Create the tags or get them if they already exist 
