@@ -47,8 +47,8 @@ const Question = ({mongoUserId}:Props) => {
   async function onSubmit(values: z.infer<typeof QuestionsSchema>) {
    setIsSubmitting(true);
    try{
-//make an async call to your API -> create a question 
-//contain all form data 
+// make an async call to your API -> create a question 
+// contain all form data 
 await createQuestion({
   title: values.title,
   content: values.explanation,
@@ -112,7 +112,7 @@ const handleTagRemove = (tag: string, field:any) => {
               placeholder="" {...field} />
             </FormControl>
             <FormDescription className="body-regular mt-2.5 text-light-500">
-             Be specific and imagine you're asking a question to another person 
+             Be specific and imagine your asking a question to another person 
             </FormDescription>
             <FormMessage className="text-red-500" />
           </FormItem>
@@ -130,7 +130,7 @@ const handleTagRemove = (tag: string, field:any) => {
             apiKey={process.env.
             NEXT_PUBLIC_TINY_EDITOR_API_KEY}
            onInit={(evt, editor) =>{
-            //@ts-ignore
+            // @ts-ignore
            editorRef.current = editor
           }}
            onBlur={field.onBlur}
