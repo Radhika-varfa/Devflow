@@ -1,10 +1,11 @@
 import Filter from '@/components/shared/Filter'
 import NoResult from '@/components/shared/NoResult'
-import Pagination from '@/components/shared/Pagination'
+// import Pagination from '@/components/shared/Pagination'
+
 import LocalSearchbar from '@/components/shared/search/LocalSearchbar'
 import { TagFilters } from '@/constants/filters'
 import { getAllTags } from '@/lib/actions/tag.actions'
-import { SearchParamsProps } from '@/types'
+// import { SearchParamsProps } from '@/types'
 import Link from 'next/link'
 const Page = async () => {
 
