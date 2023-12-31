@@ -4,7 +4,7 @@
 // import Image from 'next/image'
 
 // const page = async ({params, searchParams}) => {
-//     // const result = await getQuestionById({questionId: params.id})
+    // const result = await getQuestionById({questionId: params.id})
 //   return (
 //     <div className='flex-start w-full flex-col'>
 //         <div>
